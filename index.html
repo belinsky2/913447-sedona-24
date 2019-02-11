@@ -75,7 +75,30 @@
       <section class="search-hotels">
         <p><b>ЗАИНТЕРЕСОВАЛИСЬ?</b></p>
         <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <!-- место для формы -->
+        <button class="search-hotels-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <form class="search" method="post" action="https://echo.htmlacademy.ru">
+          <p>
+            <label>ДАТА ЗАЕЗДА:
+              <input type="text" placeholder="24 АПРЕЛЯ 2017">
+            </label>
+          </p>
+          <p>
+            <label>ДАТА ВЫЕЗДА:
+              <input type="text" placeholder="4 ИЮЛЯ 2017">
+            </label>
+          </p>
+          <p>
+            <label for="bigs">ВЗРОСЛЫЕ:</label>
+            <button type="button">-</button>
+            <input type="text" id="bigs" placeholder="2">
+            <button type="button">+</button>
+            <label for="kids">ДЕТИ:</label>
+            <button type="button">-</button>
+            <input type="text" id="kids" placeholder="0">
+            <button type="button">+</button>
+          </p>
+          <button class="search-button" type="submit">НАЙТИ</button>
+        </form>
       </section>
       <section class="map">
         <!-- место для карты -->
