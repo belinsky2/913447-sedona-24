@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="photo.html">ФОТО И ВИДЕО</a></li>
           <li><img src="img/sedona-logo.svg" width="" height="" alt="Логотип Седоны»"></li>
           <li><a href="map.html">КАРТА ШТАТА</a></li>
-          <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+          <li><a href="inner.html">ГОСТИНИЦЫ</a></li>
         </ul>
       </nav>
     </header>
@@ -75,29 +78,29 @@
       <section class="search-hotels">
         <p><b>ЗАИНТЕРЕСОВАЛИСЬ?</b></p>
         <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <button class="search-hotels-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <button class="button search-hotels-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         <form class="search" method="post" action="https://echo.htmlacademy.ru">
           <p>
             <label>ДАТА ЗАЕЗДА:
-              <input type="text" placeholder="24 АПРЕЛЯ 2017">
+              <input type="text" value="24 АПРЕЛЯ 2017">
             </label>
           </p>
           <p>
             <label>ДАТА ВЫЕЗДА:
-              <input type="text" placeholder="4 ИЮЛЯ 2017">
+              <input type="text" value="4 ИЮЛЯ 2017">
             </label>
           </p>
           <p>
             <label for="bigs">ВЗРОСЛЫЕ:</label>
             <button type="button">-</button>
-            <input type="text" id="bigs" placeholder="2">
+            <input type="text" id="bigs" value="2">
             <button type="button">+</button>
             <label for="kids">ДЕТИ:</label>
             <button type="button">-</button>
-            <input type="text" id="kids" placeholder="0">
+            <input type="text" id="kids" value="0">
             <button type="button">+</button>
           </p>
-          <button class="search-button" type="submit">НАЙТИ</button>
+          <button class="button search-button" type="submit">НАЙТИ</button>
         </form>
       </section>
       <section class="map">
@@ -105,16 +108,16 @@
       </section>
     </main>
     <footer>
-      <p>#VISITSEDONA</p>
+      <p><b>#VISITSEDONA</b></p>
       <ul class="footer-social">
         <li><a class="social-button" href="#">
-          <img src="img/twitter.svg" width="" height="" alt="Twitter">
+          <img src="img/twitter.svg" class="twitter" width="17" height="15" alt="Twitter">
         </a></li>
         <li><a class="social-button" href="#">
-          <img src="img/facebook.svg" width="" height="" alt="Facebook">
+          <img src="img/facebook.svg" width="12" height="22" alt="Facebook">
         </a></li>
         <li><a class="social-button" href="#">
-          <img src="img/youtube.svg" width="" height="" alt="Youtube">
+          <img src="img/youtube.svg" width="20" height="16" alt="Youtube">
         </a></li>
       </ul>
       <p>Website by</p>

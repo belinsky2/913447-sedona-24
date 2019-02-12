@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+body .inner-page {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation a {
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.sedona-reasons p {
+  line-height: 26px;
+}
+
+.sedona-reasons b {
+  font-size: 21px;
+  color: #000000;
+}
+
+/* красная область */
+
+.search-hotels p {
+  line-height: 24px;
+}
+
+.search-hotels b {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.button {
+  color: #ffffff;
+  text-align: center;
+  border: 0;
+}
+
+.search-hotels-button {
+  background-color: #766357;
+}
+
+.search-hotels-button:hover,
+.search-hotels-button:focus,
+.button-reserv:hover,
+.button-reserv:focus {
+  background-color: #604e43;
+}
+
+.search-hotels-button:active,
+.button-reserv:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search {
+  align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.search p {
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+
+
+
+.search input,
+.search button {
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.search input:hover,
+.search button:hover,
+.search input:focus,
+.search button:focus {
+  background-color: #ebebeb;
+}
+
+.search input:active,
+.search button:active {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+}
+
+.search button {
+  color: #cacaca;
+}
+
+.search-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.search-button:hover,
+.search-button:focus,
+.button-more:hover,
+.button-more:focus {
+  background-color: #669ec0;
+}
+
+.search-button:active,
+.button-more:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+footer p {
+  line-height: 26px;
+  color: #000000;
+}
+
+footer b {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.social-button img{
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-button img:hover,
+.social-button img:focus {
+  background-color: #669ec0;
+}
+
+.social-button img:active {
+  background-color: #5496bd;
+}
+
+/* стили для inner */
+
+.catalog-list {
+  list-style: none;
+}
+
+h3 a {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+}
+
+h3 a:hover,
+h3 a:focus {
+  color: #81b3d2;
+}
+
+h3 a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button-more {
+  background-color: #81b3d2;
+}
+
+.button-reserv {
+  background-color: #766357;
+}
+
+.rating {
+  color: #666666;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.academy-logo {
+  color: black;
+}
