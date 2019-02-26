@@ -201,24 +201,46 @@ img {
 .sign {
   background-color: #f2f2f2;
   border: 0;
-  padding: 8px 12px;
+  padding: 6px 12px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
 }
 
-.sign {
-  font-size: 23px;
-  letter-spacing: -2px;
-  color: #aaaaaa;
+.search .sign {
+  box-sizing: border-box;
+  height: 38px;
+  width: 38px;
+  position: relative;
+
+/*  text-align: center; */
 }
 
-.sign:hover,
-.sign:focus {
-  color: #000000;
+.sign::before,
+.sign::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 13px;
+  width: 12px;
+  height: 3px;
+  background-color: #aaaaaa;
 }
 
-.sign:active {
-  color: #81b3d2;
+.plus::after {
+  transform: rotate(90deg);
+}
+
+.sign:hover::before,
+.sign:hover::after,
+.sign:focus::before,
+.sign:focus::after {
+  background-color: #000000;
+}
+
+.sign:active::before,
+.sign:active::after {
+  background-color: #81b3d2;
 }
 
 .search .date {
@@ -226,6 +248,7 @@ img {
   width: 346px;
 /*  position: relative; */
   padding-right: 40px;
+  text-align: left;
 }
 
  .search .date-box {
@@ -242,7 +265,7 @@ img {
   background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/calendar.svg);
 }
 
- .date-box:hover::after {
+.date-box:hover::after {
   background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/calendar-hover.svg);
 }
 
