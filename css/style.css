@@ -193,7 +193,6 @@ img {
 /*  display: block; */
 /*  flex-basis: 112px; */
     width: 113px;
-
 /*  flex-grow: 2; */
 /*  background-color: green; */
 }
@@ -202,12 +201,53 @@ img {
 .sign {
   background-color: #f2f2f2;
   border: 0;
-  padding: 13px;
+  padding: 8px 12px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
-.date {
+.sign {
+  font-size: 23px;
+  letter-spacing: -2px;
+  color: #aaaaaa;
+}
+
+.sign:hover,
+.sign:focus {
+  color: #000000;
+}
+
+.sign:active {
+  color: #81b3d2;
+}
+
+.search .date {
   box-sizing: border-box;
   width: 346px;
+/*  position: relative; */
+  padding-right: 40px;
+}
+
+ .search .date-box {
+  position: relative;
+}
+
+.search .date-box::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 22px;
+  background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/calendar.svg);
+}
+
+ .date-box:hover::after {
+  background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/calendar-hover.svg);
+}
+
+.date-box:active::after  {
+  background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/calendar-active.svg);
 }
 
 .search .bigs-kids {
@@ -229,22 +269,17 @@ img {
 
 .search .sign-number .kids {
   width: 65px;
-
 }
 
 .search input:hover,
-.search input:focus {/* ИСПРАВИТЬ ОШИБКУ С КНОПКОЙ НАЙТИ!!!*/
+.sign:hover {
   background-color: #ebebeb;
 }
 
-.search input:active {
+.search input:focus {
+  outline: 2px solid #e5e5e5;
   background-color: #ffffff;
-  border: 1px solid #ebebeb;
 }
-
-/* .search button {
-  color: #cacaca;
-} */
 
 .search .search-button {
   width: 458px;
