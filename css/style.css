@@ -36,21 +36,22 @@ img {
 }
 
 .welcome-sedona {
-  background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/background.jpg);
+  background-image:
+    url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/polygon.svg),
+    url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/background.jpg);
+  background-color: black;
   width: 1200px;
   height: 500px;
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-position: top center;
+  padding: 0;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 442px, 0 -85px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
-/* .polygon-img {
-  margin-top: auto;
+.welcome-img {
+  margin: auto;
 }
-*/
 
 .main-navigation a {
   line-height: 26px;
