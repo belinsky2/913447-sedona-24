@@ -89,15 +89,21 @@ img {
   padding: 15px 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /*  justify-content: space-around; */
+  /* align-items: left; */
 }
 
-.first-navigation,
-.last-navigation {
-  width: 478px;
+.site-navigation li {
+  width: 239px;
   display: flex;
-  justify-content: space-around;
+}
+
+.site-navigation a {
+  margin: auto;
+}
+
+.site-navigation li:nth-child(3) {
+  width: 244px;
 }
 
 .sedona-logo {
@@ -105,10 +111,6 @@ img {
   top: 0;
   left: 50%;
   margin-left: -70px;
-}
-
-.sedona-reasons-top {
-  margin: 0;
 }
 
 .sedona-reasons {
@@ -157,6 +159,14 @@ img {
   padding: 0 60px;
 }
 
+.sedona-reasons-top {
+  margin: 0;
+}
+
+.true-town {
+  width: 1200px;
+}
+
 .true-town div,
 .bridge {
   display: flex;
@@ -186,10 +196,12 @@ img {
 
 .trues {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
 }
 
 .trues li {
+  box-sizing: border-box;
   width: 400px;
   padding: 131px 55px 82px 55px;
   position: relative;
@@ -239,14 +251,23 @@ img {
 
 .last-reasons {
   display: flex;
+  flex-wrap: wrap;
+  /* box-sizing: border-box; */
+  padding: 20px 0 59px 0;
+  margin: 0;
+  /* padding-top: 48px;
+  padding-bottom: 63px; */
+  list-style: none;
   background-color: #eeeeee;
-  padding-top: 48px;
-  padding-bottom: 63px;
 }
 
 .last-reasons li {
   padding-left: 72px;
   padding-right: 72px;
+}
+
+.last-reasons h3 {
+  margin-top: 28px;
 }
 
 .last-reasons .road {
@@ -262,7 +283,7 @@ img {
 .search-hotels .interest {
   font-size: 30px;
   line-height: 36px;
-  margin-top: 48px;
+  margin-top: 52px;
   margin-bottom: 23px;
   color: #000000;
 }
@@ -489,7 +510,7 @@ footer {
   bottom: 0px;
   right: 0px;
   opacity: 0.9;
-  padding: 42px 36px;
+  padding: 36px 36px 42px 36px;
 }
 
 .hashtag,
