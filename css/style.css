@@ -478,7 +478,6 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 42px 36px;
   box-sizing: border-box;
   width: 100%;
   background-color: #ffffff;
@@ -490,6 +489,7 @@ footer {
   bottom: 0px;
   right: 0px;
   opacity: 0.9;
+  padding: 42px 36px;
 }
 
 .hashtag,
@@ -597,7 +597,7 @@ footer {
 
 .hotel-price p {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .first-column {
@@ -631,7 +631,7 @@ footer {
   text-align: center;
   vertical-align: text-bottom;
   font-weight: bold;
-  padding: 5px 16px;
+  padding: 3px 16px;
 }
 
 .button-more {
@@ -658,10 +658,18 @@ footer {
   justify-content: space-between;
 }
 
+.star img {
+  margin-left: 2px;
+}
+
 .rating {
   margin: 0;
   padding: 4px 14px;
   color: #666666;
   text-align: center;
   background-color: #f2f2f2;
+}
+
+.inner-footer {
+  padding: 35px 36px;
 }
