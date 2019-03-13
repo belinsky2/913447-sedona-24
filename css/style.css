@@ -890,7 +890,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 258px;
+  width: 259px;
   margin: 0;
   padding: 0;
 }
@@ -931,12 +931,12 @@ footer {
   text-align: center;
   vertical-align: text-bottom;
   font-weight: bold;
-  padding: 3px 16px;
+  padding: 3px 17px;
 }
 
 .button-more {
   box-sizing: border-box;
-  width: 110px;
+  /* width: 110px; */
   margin-right: 6px;
   background-color: #81b3d2;
 }
