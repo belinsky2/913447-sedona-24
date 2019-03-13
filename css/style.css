@@ -46,8 +46,8 @@ img {
 
 .welcome-sedona {
   background-image:
-    url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/polygon.svg),
-    url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/background.jpg);
+    url('../img/polygon.svg'),
+    url('../img/background.jpg');
   background-color: black;
   width: 100%;
   height: 509px;
@@ -142,8 +142,8 @@ img {
   margin-bottom: 50px;
 }
 
-.sedona-reasons-top,
-.sedona-reasons-top li {
+.sedona-big-reasons,
+.sedona-big-reasons li {
   list-style: none;
   padding: 0;
 }
@@ -159,7 +159,7 @@ img {
   padding: 0 60px;
 }
 
-.sedona-reasons-top {
+.sedona-big-reasons {
   margin: 0;
 }
 
@@ -170,7 +170,8 @@ img {
 .true-town div,
 .bridge {
   display: flex;
-  height: 256px;
+  align-items: center;
+  /* height: 256px; */
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -184,9 +185,12 @@ img {
   padding: 46px 60px 60px 60px;
 }
 
-.true-town-img {
+.big-reasons-img {
   box-sizing: border-box;
+  align-items: center;
+  /* align-content: center; */
   width: 800px;
+  height: 256px;
 }
 
 .sedona-reasons span {
@@ -220,7 +224,7 @@ img {
   top: 60px;
   left: 50%;
   margin-left: -37px;
-  background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/house.svg);
+  background-image: url('../img/house.svg');
 }
 
 .trues li:nth-child(2)::before {
@@ -231,7 +235,7 @@ img {
   top: 61px;
   left: 50%;
   margin-left: -37px;
-  background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/burger.svg);
+  background-image: url('../img/burger.svg');
 }
 
 .trues li:nth-child(3)::before {
@@ -242,14 +246,14 @@ img {
   top: 56px;
   left: 50%;
   margin-left: -32px;
-  background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/gift.svg);
+  background-image: url('../img/gift.svg');
 }
 
 .bridge-description {
    padding: 46px 45px 60px 45px;
 }
 
-.last-reasons {
+.sedona-small-reasons {
   display: flex;
   flex-wrap: wrap;
   /* box-sizing: border-box; */
@@ -261,16 +265,16 @@ img {
   background-color: #eeeeee;
 }
 
-.last-reasons li {
+.sedona-small-reasons li {
   padding-left: 72px;
   padding-right: 72px;
 }
 
-.last-reasons h3 {
+.sedona-small-reasons h3 {
   margin-top: 28px;
 }
 
-.last-reasons .road {
+.sedona-small-reasons .road {
   padding-left: 65px;
   padding-right: 65px;
 }
@@ -425,22 +429,23 @@ img {
   position: relative;
 }
 
-.search .date-box::after {
-  content: "";
+.search svg {
+  /* content: ""; */
   position: absolute;
   top: 9px;
   right: 9px;
   width: 21px;
   height: 22px;
-  background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/calendar.svg);
 }
 
-.date-box:hover::after {
-  background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/calendar-hover.svg);
+.date-box:hover svg {
+  fill: #231f20;
+  /* background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/calendar-hover.svg); */
 }
 
-.date-box:active::after  {
-  background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/calendar-active.svg);
+.date-box:active  svg {
+  fill: #81b3d2;
+  /* background-image: url(/Users/belinsky/Documents/GitHub/913447-sedona-24/img/calendar-active.svg); */
 }
 
 .search .bigs-kids {
@@ -582,6 +587,280 @@ footer {
 
 /* ////////////// стили для inner ///////////////////*/
 
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  padding: 28px 72px 20px 72px;
+  color: #ffffff;
+  background-image: url('../img/filter-background.jpg');
+  background-position: center -300px;
+}
+
+.filters fieldset {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 239px;
+  margin: 0 16px 0 0;
+  padding: 0;
+  /* padding: 24px 48px 20px 72px; */
+  /* margin: auto; */
+  border: none;
+}
+
+.filters legend {
+  padding-bottom: 23px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.custom-checkbox {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.filters .custom-checkbox:last-child {
+  margin-bottom: 12px;
+}
+
+.custom-checkbox input[type="checkbox"] + span {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  left: 0px;
+  /* background-color: #000000; */
+  background-image: url('../img/checkbox-off.svg');
+  background-repeat: no-repeat;
+}
+
+.custom-checkbox input[type="checkbox"]:focus + span {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + span {
+  background-image: url('../img/checkbox-on.svg');
+}
+
+.custom-checkbox input[type="checkbox"]:disabled + span {
+  background-image: url('../img/checkbox-off-dis.svg');
+}
+
+.custom-checkbox input[type="checkbox"]:checked:disabled + span {
+  background-image: url('../img/checkbox-on-dis.svg');
+}
+
+.sorting {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 22px 72px 19px 72px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sorting .sorting-button {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sorting .result {
+  margin: 0 47px 0 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.result + p {
+  font-size: 12px;
+  line-height: 18px;
+  margin-right: 33px;
+  margin-top: 15px;
+}
+
+.sorting-button {
+  margin-right: 19px;
+}
+
+.sorting-button span {
+  border-bottom: 1px dotted #81b3d2;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-button-current span {
+  border-bottom: none;
+  color: #81b3d2;
+}
+
+.sorting-button:hover span,
+.sorting-button:focus span {
+  border-bottom: 1px dotted #81b3d2;
+  color: #81b3d2;
+}
+
+.sorting-button:active span {
+  border-bottom: none;
+  color: #000000;
+}
+
+.sorting-up-down {
+  margin-left: auto;
+}
+
+.sorting-up,
+.sorting-down {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sorting-up {
+  margin-right: 9px;
+}
+
+.sorting-up:hover path,
+.sorting-down:hover path,
+.sorting-up:focus path,
+.sorting-down:focus path {
+  fill: #000000;
+}
+
+.sorting-up:active path,
+.sorting-down:active path,
+.sorting-up-current path,
+.sorting-down-current path {
+  fill: #81b3d2;
+}
+
+.filter-range {
+  width: 317px;
+  margin-left: auto;
+  /* margin: 50px auto; /* для демо */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 32px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 56px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin-left: 84px;
+  padding: 6px 34px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+
 .catalog-list {
   list-style: none;
   margin: 0;
@@ -593,7 +872,7 @@ footer {
   justify-content: flex-start;
   height: 90px;
   padding: 30px 72px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-img {
@@ -693,4 +972,8 @@ footer {
 
 .inner-footer {
   padding: 35px 36px;
+}
+
+.inner-footer .trade-mark a {
+  margin-top: 5px;
 }

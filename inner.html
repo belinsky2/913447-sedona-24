@@ -10,7 +10,7 @@
   <body>
     <div class="content">
       <header>
-        <img src="img/sedona-logo.svg" class="sedona-logo" width="140" height="72" alt="Логотип Седоны">
+        <a href="index.html"><img src="img/sedona-logo.svg" class="sedona-logo" width="140" height="72" alt="Логотип Седоны"></a>
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
@@ -23,9 +23,68 @@
       </header>
       <main class="inner-page">
         <h1 class="visually-hidden">Жильё в Седоне</h1>
-        <section class="filters">
+        <section>
           <h2 class="visually-hidden">Фильтр жилья</h2>
-          <!-- Здесь будет форма -->
+          <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="infrastructure">
+              <legend>ИНФРАСТРУКТУРА:</legend>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="visually-hidden"><span></span>БАССЕЙН
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="visually-hidden"><span></span>ПАРКОВКА
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="visually-hidden"><span></span>WI-FI
+              </label>
+            </fieldset>
+            <fieldset class="house">
+              <legend>ТИП ЖИЛЬЯ:</legend>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="visually-hidden"><span></span>ГОСТИНИЦА
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="visually-hidden"><span></span>МОТЕЛЬ
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="visually-hidden"><span></span>АПАРТАМЕНТЫ
+              </label>
+            </fieldset>
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            </div>
+          </form>
+        </section>
+        <section class="sorting">
+          <p class="result">НАЙДЕНО: 3</p>
+          <p>СОРТИРОВКА:</p>
+          <button class="sorting-button"><span>ПО ЦЕНЕ</span></button>
+          <button class="sorting-button"><span>ПО ТИПУ</span></button>
+          <button class="sorting-button"><span>ПО РЕЙТИНГУ</span></button>
+          <div class="sorting-up-down">
+            <button class="sorting-up">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="#cacaca">
+                  <path d="M5.5 0L0 10h11z"/>
+              </svg>
+            </button>
+            <button class="sorting-down">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="#cacaca">
+                  <path d="M5.5 10L0 0h11"/>
+              </svg>
+            </button>
+          </div>
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Список жилья</h2>
