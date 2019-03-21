@@ -430,6 +430,7 @@ img:not(.welcome-img) {
 .map iframe {
   position: relative;
   z-index: 2;
+  border: none;
 }
 
 .search-hotels-button + div {
