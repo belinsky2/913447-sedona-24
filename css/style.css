@@ -10,6 +10,7 @@ body {
   text-align: center;
   background-color: #f2f2f2;
   /* width: 100%; */
+
 }
 
 .content {
@@ -21,7 +22,8 @@ body {
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   position: relative;
-  /* max-width: 100%; */  /* включение небольшой резиновости */
+
+  /* max-width: 100%;   /* включение небольшой резиновости */
 }
 
 body .inner-page {
@@ -120,11 +122,11 @@ img:not(.welcome-img) {
 }
 
 .site-navigation li:nth-child(1) a {
-  padding-left: 71px;
+  margin-left: 71px;
 }
 
 .site-navigation li:nth-child(2) a {
-  padding-left: 73px;
+  margin-left: 73px;
 }
 
 .site-navigation li:nth-child(3) {
@@ -132,11 +134,11 @@ img:not(.welcome-img) {
 }
 
 .site-navigation li:nth-child(3) a {
-  padding-left: 76px;
+  margin-left: 76px;
 }
 
 .site-navigation li:nth-child(4) a {
-  padding-left: 87px;
+  margin-left: 87px;
 }
 
 .sedona-logo {
@@ -412,24 +414,34 @@ img:not(.welcome-img) {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.sedona-map {
+.content .map {
   position: relative;
+}
+
+.map div {
+  position: absolute;
   z-index: 1;
+  left: 0;
+  top: 0;
   background-color: #cee1b3;
+  /* background-image: url("img/map.jpg"); */
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
 }
 
 .search-hotels-button + div {
   position: relative;
 }
 
-.search {
+.search-hotels .search {
+  display: none;
   position: absolute;
-  z-index: 20;
+  z-index: 3;
   top: 0;
   left: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -442,6 +454,41 @@ img:not(.welcome-img) {
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
+
+@keyframes form-opacity {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+/* @keyframes form-down {
+  0% {
+     transform: translateY(-500px);
+   }
+
+   70% {
+     transform: translateY(30px);
+   }
+
+   90% {
+     transform: translateY(-10px);
+   }
+
+   100% {
+     transform: translateY(0);
+   }
+} */
+
+.search-hotels .form-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  animation-name: form-opacity;
+  animation-duration: 1s;
+}
+
+
+
+
 
 .search div {
   display: -webkit-box;
@@ -600,6 +647,33 @@ img:not(.welcome-img) {
   font-weight: bold;
   text-transform: uppercase;
   background-color: #81b3d2;
+}
+
+@keyframes error-animation {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.search .error {
+  animation-name: error-animation;
+  animation-duration: 1s;
 }
 
 .search-button:hover,
